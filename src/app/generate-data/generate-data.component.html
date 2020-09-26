@@ -1,0 +1,22 @@
+<header>
+    <h1>Generate Test Data</h1>
+</header>
+<mat-horizontal-stepper linear="false" #stepper>
+    <mat-step>
+            <ng-template matStepLabel>Connect To Database</ng-template>
+            <app-connect (goForward)="next($event)"></app-connect>
+    </mat-step>
+    <mat-step >
+        <ng-template matStepLabel>Table</ng-template>
+        <app-select-table (goForward)="next($event)" ></app-select-table>
+    </mat-step>
+    <mat-step>
+        <ng-template matStepLabel>Select Options</ng-template>
+        <app-select-column (goForward)="next($event)" [tableDetails]="tableDetails"></app-select-column>
+    </mat-step>
+    <mat-step >
+        <ng-template matStepLabel>Confirm Table data</ng-template>
+        <app-confirm-data></app-confirm-data>
+    </mat-step>
+    
+</mat-horizontal-stepper>

@@ -1,0 +1,26 @@
+<div>
+  <mat-card>
+    <mat-card-content>
+      <mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+        <ng-container matColumnDef="table_name">
+          <mat-header-cell *matHeaderCellDef>Name</mat-header-cell>
+          <mat-cell *matCellDef="let element">{{element.table}}</mat-cell>
+        </ng-container>
+      
+        <ng-container matColumnDef="column_number">
+          <mat-header-cell *matHeaderCellDef>Number of columns</mat-header-cell>
+          <mat-cell *matCellDef="let element">{{element.columns.length}}</mat-cell>
+        </ng-container>
+      
+        <ng-container matColumnDef="record_number">
+          <mat-header-cell *matHeaderCellDef>Number of records</mat-header-cell>
+          <mat-cell *matCellDef="let element">{{element.noOfRecords}}</mat-cell>
+        </ng-container>
+      
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let row,columns:displayedColumns;" (click)="getRecord(row)"></mat-row>
+      </mat-table>
+    </mat-card-content>
+  </mat-card>
+</div>

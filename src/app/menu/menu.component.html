@@ -1,0 +1,39 @@
+<div class="welcome">
+    <span class="title">Welcome to Test Data Manager!</span>
+    <div class="menu">
+        <div class="options">
+            <img class="generate" src="../../assets/Generate.png">
+            <div class="detail">
+                <strong>Generate Test Data</strong>
+                <br>
+                Click on start to generate test data automatically for
+                your application and meet your testing deadlines
+                quickly and efficiently! <a href="/">Read More</a>
+            </div>
+            <button routerLink="generate-data" mat-raised-button color="primary">Start</button>
+        </div>
+
+        <div class="options">
+            <img class="cicd" src="../../assets/CICD.png">
+            <div class="detail">
+                <strong>CI/CD Integration</strong>
+                <br>
+                Your one stop shop for automating test data
+                Generation through CI/CD pipelines.
+                <a href="/">Read More</a>
+            </div>
+            <button (click)="verifyUser()" mat-raised-button color="primary">Create</button>
+        </div>
+
+        <div class="options activity">
+            <img src="../../assets/Activity.png">
+            <div class="detail">
+                <strong>Track Your Activities</strong>
+                <br>
+                Check and manage your activities.
+                <a href="/">Read More</a>
+            </div>
+            <button (click)="verifyUser()" mat-raised-button color="primary">View</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,84 @@
+mat-card-content {
+    margin: 50px 32px;
+    font-size: 25px;
+}
+
+mat-card {
+    margin: auto;
+    width: 60%;
+    padding: 16px 32px;
+    background-color: whitesmoke;
+}
+mat-card-header {
+    font-weight: 500;
+    color: #255484;
+    font-size: 30px;
+    margin-top: 10px !important;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}
+th,
+td {
+    padding: 5px;
+    text-align: left;
+}
+
+input {
+    height: 33px;
+    border-radius: 5px;
+    background: white;
+    border-color: aliceblue;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+button {
+    width: 92px;
+    height: 34px;
+    font-family: monospace;
+    margin-left: 75px;
+    border-radius: 5px;
+    border-color: transparent;
+    background: #194b7e;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btns {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.row-2 {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0;
+
+    // &-message {
+    //     margin-bottom: 50px;
+    // }
+
+    &-dateTime {
+        margin-bottom: 50px;
+    }
+}
+
+.options {
+    width: 210px;
+    height: 35px;
+    border-radius: 5px;
+    background: white;
+    border-color: aliceblue;
+    font-family: monospace;
+    font-size: 20px;
+}
+.port {
+    float: right;
+}

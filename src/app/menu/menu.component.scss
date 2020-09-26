@@ -1,0 +1,48 @@
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    height: 93%;
+    padding: 20px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.options {
+    width: 282px;
+    height: 292px;
+    margin: 50px 100px 0 0;
+}
+
+.title {
+    font-size: 50px;
+}
+
+img {
+    width: 280px;
+    height: 188px;
+    background-color: whitesmoke;
+}
+
+.activity {
+    margin-right: 0;
+}
+
+button {
+    width: 75px;
+    height: 30px;
+    font-family: monospace;
+    border-radius: 5px;
+    border-color: transparent;
+    background: #194b7e;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+.detail {
+    height: 120px;
+}

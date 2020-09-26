@@ -1,0 +1,25 @@
+mat-card-content {
+  margin: 50px 32px;
+  font-size: 25px;
+}
+
+mat-cell {
+  height: 80px;
+  text-align: center;
+}
+
+mat-card {
+  margin: auto;
+  padding: 16px 32px;
+  box-shadow: none !important;
+}
+
+mat-header-cell {
+  font-weight: bold;
+  font-size: 14px;
+  color: currentColor;
+}
+.mat-row:hover {
+  background-color: whitesmoke;
+  cursor: pointer;
+}

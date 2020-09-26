@@ -1,0 +1,39 @@
+<div>
+    <mat-card>
+        <mat-card-header>
+            Please provide connection details
+        </mat-card-header>
+        <mat-card-content>
+            <form [formGroup]="connectForm">
+                <div class="row-1">
+                    <span class="server">Server:
+                        <input formControlName="server" placeholder="eg. 10.11.12.13" required>
+                    </span>
+
+                    <span class="port">Port:
+                        <input formControlName="port" placeholder="eg. 8080" required>
+                    </span>
+
+                </div>
+                <div class="row-2">
+                    <span class="row-2-message">Enter information to sign in to the server:</span>
+                    <span class="row-2-username">Username:
+                        <input formControlName="userName" placeholder="Username" required>
+                    </span>
+                    <span>Password:
+                        <input formControlName="password" placeholder="Password" required>
+                    </span>
+                </div>
+                <div>
+                    <span>Database:
+                        <input formControlName="dbName" placeholder="Database" required>
+                    </span>
+                </div>
+                <div class="btns">
+                    <button mat-button (click)="connect(false)">Test</button>
+                    <button mat-button (click)="connect(true)">Connect</button>
+                </div>
+            </form>
+        </mat-card-content>
+    </mat-card>
+</div>

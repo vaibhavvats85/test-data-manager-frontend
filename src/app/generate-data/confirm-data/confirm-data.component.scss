@@ -1,0 +1,19 @@
+input {
+    border: none;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+mat-header-cell {
+    color: black;
+}
+
+button {
+    background: cadetblue;
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 5px;
+}

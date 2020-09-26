@@ -1,0 +1,21 @@
+header {
+    text-align: center;
+    color: #255484;
+}
+.mat-stepper-horizontal {
+    margin-top: 8px;
+}
+
+.mat-form-field {
+    margin-top: 16px;
+}
+
+:host::ng-deep {
+    .mat-step-header .mat-step-label {
+        font-size: 20px;
+    }
+    .mat-step-icon-selected {
+        color: white;
+        background: #255484;
+    }
+}

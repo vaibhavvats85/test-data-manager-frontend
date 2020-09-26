@@ -1,0 +1,34 @@
+.background{
+    width: 100%;
+    height: 48px;
+    background: url('../../assets/Picture1.png');
+    display: flex;
+}
+
+.tdm{
+    font-size: 18px;
+    color: white;
+    padding-left: 10px;
+    align-items: center;
+    display: flex;
+}
+
+.info{
+    display: flex;
+    width: 350px;
+    align-items: center;
+    margin-left: auto;
+    justify-content: flex-end;
+    padding-right: 25px;
+}
+
+.username{
+    margin-left: 5px;
+    color: white;
+    font-size: 15px;
+}
+
+
+img{
+    height: 31px;
+}
